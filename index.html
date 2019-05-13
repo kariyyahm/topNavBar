@@ -7,9 +7,6 @@
   <title>王某的个人简历</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="./a.css">
-
-  <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.13.0/dist/av-min.js"></script>
-  <script src="./js/message.js"></script>
   <script src="//at.alicdn.com/t/font_1088704_0nmsqaysh3ap.js"></script>
 </head>
 
@@ -190,14 +187,20 @@
       </div>
     </div>
   </section>
-  <h2>留 言</h2>
-  <section>
-    <form id="postMessage" style="width: 700px; margin: 70px auto; ">
+  <section class="messages">
+    <h2>留 言</h2>
+    <ol id="messageList"></ol>
+    <form id="postMessage">
+      <label for="">用户</label>
+      <input type="text" name="name">
+      <label for="">内容</label>
       <input type="text" name="content">
       <input type="submit" value="提交">
     </form>
 
   </section>
+
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.3.0/Tween.min.js"></script>
   <script>
     setTimeout(function () { haha() }, 0)
@@ -293,6 +296,8 @@
       }
     }
   </script>
+  <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.13.0/dist/av-min.js"></script>
+  <script src="./js/message.js"></script>
 </body>
 
 </html>

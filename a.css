@@ -299,7 +299,6 @@ main>.botton-wrapper>a:hover{
     margin-right: auto;
     margin-top: 70px;
     text-align: center;
-    margin-bottom: 300px;
 }
 .portfolio>h2{
     text-align: center;
@@ -357,4 +356,22 @@ main>.botton-wrapper>a:hover{
 .portfolio .works .small-2{
     position: absolute;
     top: 298px;
+}
+.messages{
+    max-width: 930px;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+.messages>ol{
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.messages>ol>li {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+.messages>form {
+    max-width: 460px;
+    margin: 12px auto;
 }
